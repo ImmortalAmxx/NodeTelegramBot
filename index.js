@@ -7,7 +7,7 @@ const token = process.env.TELEGRAM_BOT_TOKEN; // Змінна середовищ
 const bot = new TelegramBot(token, { polling: false });
 
 // Встановлення веб-хука для Telegram
-const webhookUrl = 'https://your-vercel-app-url.now.sh'; // Замініть на свій URL
+const webhookUrl = 'https://node-telegram-bot-neon.vercel.app'; // Замініть на свій URL
 bot.setWebHook(`${webhookUrl}/bot${token}`);
 
 // Обробник подій для команди /start
